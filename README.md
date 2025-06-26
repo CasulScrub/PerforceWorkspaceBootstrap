@@ -1,19 +1,3 @@
-# PerforceWorkspaceBootstrap
-Perforce Workspace Bootstrap
-
-Absolutely! Here's a ready-to-publish setup for your **Perforce Workspace Bootstrap Repository**, perfect for sharing with teammates or your future self 🔁
-
----
-
-## 📁 Repository Name Suggestion
-
-**`PerforceWorkspaceBootstrap`**
-
----
-
-## 📄 README.md (Full Version)
-
-````markdown
 # 🚀 Perforce Workspace Bootstrap
 
 A lightweight PowerShell utility that automates the creation of `.p4ignore.txt` and `p4config.txt` files for Unreal Engine projects using Perforce.
@@ -24,30 +8,46 @@ Perfect for solo developers and teams working across multiple streams, this scri
 
 ## 🧰 Features
 
-- ✅ Automatically generates `.p4ignore.txt` using best practices for Unreal Engine, Visual Studio, and Git
-- ✅ Creates `p4config.txt` with stream-specific Perforce settings
-- ✅ Auto-detects `.uproject` files to validate setup
-- ✅ Prints current Perforce settings for verification
-- 💥 Works across all local streams and folders
+* ✅ Automatically generates `.p4ignore.txt` using best practices for Unreal Engine, Visual Studio, and Git
+* ✅ Creates `p4config.txt` with stream-specific Perforce settings
+* ✅ Auto-detects `.uproject` files to validate setup
+* ✅ Prints current Perforce settings for verification
+* 💥 Works across all local streams and folders
 
 ---
 
 ## 📦 What's Included
 
-- `Setup-PerforceWorkspace-FULL.ps1`: Interactive PowerShell script for bootstrapping new workspaces with clean ignore/config files
+* `Setup-PerforceWorkspace-FULL.ps1`: Interactive PowerShell script for bootstrapping new workspaces with clean ignore/config files
+* `setup.bat`: A simple launcher that runs the PowerShell script with one double-click
 
 ---
 
 ## 🧪 Usage
 
-### 1. Clone or download this repo  
+### 1. Clone or download this repo
+
 ```bash
 git clone https://github.com/yourusername/PerforceWorkspaceBootstrap.git
-````
+```
 
 ### 2. Run the script
 
-Open PowerShell and run:
+You have two options:
+
+#### 🖱️ Option A: Easy Mode (Recommended for New Users)
+
+Double-click **`setup.bat`**.
+
+This launcher will:
+
+* Check for the PowerShell script
+* Run it with proper permissions (no admin required)
+* Keep the window open after running so you can review the output
+
+🔐 **Safety Note:** The `.bat` file only runs the script in this folder and does not make system changes.
+
+#### 🧠 Option B: Manual PowerShell Launch
 
 ```powershell
 .\Setup-PerforceWorkspace-FULL.ps1
@@ -107,15 +107,3 @@ MIT — free to use, fork, and share. Attribution appreciated 🎓
 ## 💬 Questions or Suggestions?
 
 Open an issue or ping [@casulscrub](https://github.com/casulscrub) — we're building clean pipelines one rooster at a time 🐓🔥
-
-```
-
----
-
-Would you like me to:
-- 📁 Zip the `.ps1` and `README.md` into a repo bundle?
-- 🐙 Help push this to your GitHub automatically?  
-- 🧪 Add a test file validator that checks ignored files per workspace?
-
-Let’s make it pro.
-```
